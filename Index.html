@@ -1,12 +1,49 @@
 <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM Manipulation in js</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>DOM Manipulation in JS</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+    <header class="header">
+        <h1>Welcome to My DOM Practice Page</h1>
+        <p>Learn JavaScript DOM Manipulation with style!</p>
+    </header>
+
+    <main class="container">
+        <section class="contain">
+            <p>
+                Assalamualaikum! I am a web developer. I am learning DOM Manipulation in JavaScript. 
+                This website is my playground for practicing real-world examples. I hope you enjoy exploring it.
+            </p>
+        </section>
+
+        <section class="saman">
+            <h2 class="heading_1">DOM</h2>
+            <h3 class="heading_2">Events And Query Selectors</h3>
+        </section>
+
+        <section class="features">
+            <div class="feature-box">
+                <h4>What is DOM?</h4>
+                <p>The Document Object Model is the interface between HTML and JavaScript.</p>
+            </div>
+            <div class="feature-box">
+                <h4>Query Selectors</h4>
+                <p>Select elements using <code>getElementById</code>, <code>querySelector</code>, and more.</p>
+            </div>
+            <div class="feature-box">
+                <h4>Event Handling</h4>
+                <p>Respond to user actions like clicks, mouse moves, and form submissions.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Tanveer's DOM Practice. All rights reserved.</p>
+    </footer>
 </body>
 </html> -->
 
@@ -14,30 +51,52 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Netflix Clone</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Mini Project</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="navbar">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" class="logo" />
-    <button class="signin-btn">Sign In</button>
-  </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Unlimited movies, TV shows, and more</h1>
-      <h2>Watch anywhere. Cancel anytime.</h2>
-      <p>Ready to watch? Enter your email to create or restart your membership.</p>
-      <div class="email-form">
-        <input type="email" placeholder="Email address" />
-        <button>Get Started &gt;</button>
-      </div>
-    </div>
-  </section>
+    <h1 id="mainHeading">Welcome to DOM Practice</h1>
+    <div class="content">Click the button to change this text.</div>
 
-  <script src="script.js"></script>
+    <ul>
+        <li class="list-item">Apple</li>
+        <li class="list-item">Banana</li>
+        <li class="list-item">Orange</li>
+    </ul>
+
+    <!-- onclick="alert('This is a Tag Selctors')" -->
+    <button
+      id="changeBtn"
+      >Change Text & Style</button>
+
+    <script>
+        // direct document
+        // document.getElementById('changeBtn').onclick = function () {
+        //     console.log("This is a Direct Change a Services");
+        // }
+
+        // addEventListener Document
+        // document.getElementById('changeBtn').addEventListener('click', function () {
+        //     // alert("Button Clickable")
+        //     console.log("This is a okay Process");
+            
+        // })
+
+        document.querySelector('#changeBtn').addEventListener('click', function () {
+            document.querySelector('.content').innerHTML = "This is a new Text",
+            document.querySelector('.content').style.backgroundColor = "green",
+            document.querySelector('.content').style.padding = "20px"
+
+
+            
+        })
+    </script>
 </body>
+
 </html>
