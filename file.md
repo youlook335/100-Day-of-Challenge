@@ -5,7 +5,7 @@
 **Day 1 (Apr 10):** JS Refresher - Variables, Data Types, Operators  ✅
 **Day 2 (Apr 11):** Functions, Scope, Hoisting ✅
 **Day 3 (Apr 12):** Arrays & Objects - Basics + Methods  ✅
-**Day 4 (Apr 13):** DOM Manipulation - Query Selectors, Events  
+**Day 4 (Apr 13):** DOM Manipulation - Query Selectors, Events  ✅
 **Day 5 (Apr 14):** Forms & Local Storage  
 **Day 6 (Apr 15):** ES6+ (Destructuring, Spread, Rest, Arrow Functions)  
 **Day 7 (Apr 16):** Callback, Promises, Async/Await  
