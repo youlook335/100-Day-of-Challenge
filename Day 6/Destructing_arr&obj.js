@@ -8,17 +8,17 @@ let chang_1 = arr[0] = "Malik Awan";
 
 // method 2 
 // ap variables ma hi bna ka rakhta ha ka itni value Print ho
-// let [a, b, c] = arr;
-// console.log(a, b ,c);
+let [ab, ba, ca] = arr;
+console.log(ab, ba ,ca);
 
 
 // Ap Array ma sa hi value ko hie kar sakta ho
-let [a, , , , ...rest] = arr;
-// console.log(a);
+let [aa, , , , ...rest] = arr;
+console.log(aa);
 
 // agr ap chat ho ka jo variable ma define ha a bs wahi aya to a ko print karao agr chta ho ka a ka ilaqa ay to rest ko karao agr chta ho ka sab ho to arr karao
-// console.log(rest);
-// console.log(arr);
+console.log(rest);
+console.log(arr);
 
 
 // ES6+ Destructing in Object

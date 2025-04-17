@@ -1,7 +1,7 @@
-// let key = prompt("Enter a Your Key Example : Name")
-// let Value = prompt("Enter a Your Name Example : John Doe");
+let key = prompt("Enter a Your Key Example : Name")
+let Value = prompt("Enter a Your Name Example : John Doe");
 
-// localStorage.setItem(key, Value);
+localStorage.setItem(key, Value);
 
 // localStorage.setItem("name", "Ali");
 // localStorage.getItem("name");
@@ -11,7 +11,7 @@ localStorage.removeItem("name");
 
 // Method	Detail
 // setItem(key, value)	
-// getItem(key)
+// getItem(key)w
 // removeItem(key)	
 // clear()
 // key(index)
