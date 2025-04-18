@@ -1,3 +1,15 @@
+
+// function greet(name , callback) {
+//     console.log("Assalam o Alaikum " + name) ;
+//     callback();  
+// }
+// function sayby() {
+//     console.log("Allah Hafiz");
+// }
+// greet("Haider" , sayby)
+
+
+
 // function greet(name, callback) {
 //     console.log("Assalam o Alaikum " + name);
 //     callback();
@@ -28,24 +40,56 @@
 //     console.log(err);
 //   });
 
-// function loadscript(Src, Callback) {
-//     let script = document.createElement('script')
-//     script.src = Src
-//     script.onload = () => Callback(script)
-//     document.head.append(script)
+// const callback  = (arg) => {
+//   console.log(arg);
+  
 // }
 
-// loadscript("https://example.com/somefile.js", function(script) {
-//     console.log("Script loaded successfully!", script);
-// });
+
+// Only Run a Browser
+
+// const loadscript = (src, callback) => {
+//     let sc = document.createElement ("script");
+//     sc.src = src ;
+//     sc.onload = callback("Harry");
+//     document.head.append(sc);
+// }
+// loadscript("https://cdn.js.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js", callback)
 
 
 
+// callback Practise
 
-const loadscript = name(src, callback) {
-    let sc = document.createElement ("script");
-    sc.src = src ;
-    sc.onload = () => {
-        
-    }
-}
+// function grook(name , age , contact, callback) {
+//     console.log( name + age + contact);
+//     callback();
+// }
+
+// function grook1(id) {
+// console.log("No.1");
+// }
+// grook(" Tanveer ", "16 ", "+92 3257048768",grook1);
+
+// function grook(name, age, contact, callback) {
+//     console.log(name + age + contact);
+//     callback();
+//   }
+  
+//   function grook1(id) {
+//     console.log(id);
+//   }
+  
+//   grook("Tanveer", "16", "+92 3257048768", grook1);
+  
+function grook(name, age, contact, callback) {
+    console.log(name + age + contact);
+    let result = callback("This is callback value");
+    console.log(result);  // callback ka return yahan print hoga
+  }
+  
+  function grook1(id) {
+    return "Callback returned: " + id;
+  }
+  
+  grook("Tanveer", "16", "+92 3257048768", grook1);
+  
