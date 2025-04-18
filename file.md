@@ -8,7 +8,11 @@
 **Day 4 (Apr 13):** DOM Manipulation - Query Selectors, Events  ✅
 **Day 5 (Apr 14):** Forms & Local Storage  ✅
 **Day 6 (Apr 15):** ES6+ (Destructuring, Spread, Res, Arrow Functions)  ✅
-**Day 7 (Apr 16):** Callback, Promises, Async/Await  for Code With
+**Day 7 (Apr 16):** Callback, Promises, Async/Await  for Code With Harry
+# Call Back Function Videos
+// https://www.youtube.com/watch?v=9JaDBYPmiJ0&t=341s
+# Async/Await Videos
+// https://www.youtube.com/watch?v=gRLdHSabW3o
 **Day 8 (Apr 17):** Array Methods (`map`, `filter`, `reduce` `For each`, etc.)  
 **Day 9 (Apr 18):** Build Mini Project: Calculator / Weather UI  
 **Day 10 (Apr 19):** JS Concepts Deep Dive + Review
