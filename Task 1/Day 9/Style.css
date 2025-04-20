@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #212121;
+    color: #fff;
+}
+
+.container {
+    margin-top: 120px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 265px;
+    border: 5px solid white;
+}
+
+.sec_1 {
+    display: flex;
+    gap: 10px;
+}
+
+.sec_2 {
+    display: flex;
+    gap: 10px;
+}
+
+.sec_3 {
+    display: flex;
+    gap: 10px;
+
+}
+
+.sec_4 {
+    display: flex;
+    gap: 10px;
+}
+
+.sec_5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+/* Base button styles */
+.buttons {
+    width: 60px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    height: 60px;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #f0f0f0; /* Default background */
+    transition: all 0.3s ease;  /* Smooth transition for hover */
+}
+
+/* Hover effect */
+.buttons:hover {
+    background: linear-gradient(135deg, #6e7e8f, #2d3b3f); /* Gradient color */
+    color: white;  /* White text color */
+    transform: scale(1.1);  /* Slight zoom effect */
+}
+#colorings {
+    background-color: #ff2a2a;
+    color: #ffffff;
+}
+.input_tag {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    text-align: right;
+    padding: 5px;
+    padding-top: 20px; /* More padding for better space */
+    font-size: 22px;
+    height: 30px; /* Increased height for better readability */
+    margin-bottom: 20px; /* Increased bottom margin */
+    background-color: #f0f0f0; /* Soft background color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition on focus */
+}
+
+/* Focus effect for the input */
+.input_tag:focus {
+    background-color: #ffffff; /* White background on focus */
+    box-shadow: 0 0 8px rgba(0, 122, 255, 0.6); /* Blue shadow on focus */
+    outline: none; /* Remove default outline */
+    border-radius: 10px;
+}
