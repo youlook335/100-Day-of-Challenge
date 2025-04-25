@@ -10,7 +10,7 @@
 **Day 6 (Apr 15):** ES6+ (Destructuring, Spread, Res, Arrow Functions)  ✅
 **Day 7 (Apr 16):** Callback, Promises, Async/Await ✅
 **Day 8 (Apr 17):** Array Methods (`map`, `filter`, `reduce` `For each`, etc.) ✅ 
-**Day 9 (Apr 18):** Build Mini Project: Calculator / Weather UI  
+**Day 9 (Apr 18):** Build Mini Project: Calculator / Weather UI  ✅
 **Day 10 (Apr 19):** JS Concepts Deep Dive + Review ✅
 
 ---
