@@ -6,16 +6,24 @@
 let split_check = "mam";
 
 let split_check_again = split_check.split('');
-console.log(split_check_again);
+// console.log(split_check_again);
 
 // Check for reverse
 // 
 let reverse_check = [123, 342, 532, 645, 865, 532, 568, 312];
-let reverse_check_string = "This is a reverse Checking";
-let reverse_check_string_1 = reverse_check.split().reverse()
-console.log(reverse_check.reverse());
-console.log(reverse_check_string_1.reverse(""));
+let reverse_check_string = ["This is a reverse Checking", "This is again Check"];
+// console.log(reverse_check.reverse());
+// console.log(reverse_check_string.reverse(""));
 
+
+let join_check = ['A ', 'B ', 'C ', 'D ', 'E'];
+// agr app join ka aga ("") asa karta ha to sahi print hoga warna commas aya ga, or ap is ma ak or cheez kar sakta hai date ka sath 
+// Try to this 
+let date = [21, 4, 2025];
+// console.log(date.join("-"));
+// ab ma semiciln nahi lgta to dekho kiya ata hai
+// console.log(join_check.join());
+// console.log(join_check.join(""));
 
 
 // function Palindrome_1(str) {
@@ -26,13 +34,21 @@ console.log(reverse_check_string_1.reverse(""));
 
 
 
-// let str = "madam";
+let str = "madam";
 
-// let reversed = str.split("").reverse().join("");
+let reversed = str.split("").reverse().join("");
 
-// if (str === reversed) {
-//   console.log("Yes, it's a palindrome!");
-// } else {
-//   console.log("No, it's not a palindrome.");
-// }
+if (str === reversed) {
+  console.log("Yes, it's a palindrome!");
+} else {
+  console.log("No, it's not a palindrome.");
+}
+// console.log(reversed);
 
+
+
+function isPalindrome(str) {
+    let reversed = str.split("").reverse().join("");
+    return str === reversed;
+}
+console.log(isPalindrome("ji"));
