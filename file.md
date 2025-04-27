@@ -15,8 +15,8 @@
 
 ---
 
-**Day 11 (Apr 20):** DSA Intro + Arrays (Traverse, Insert, Delete)  
-**Day 12 (Apr 21):** Strings - Manipulation & Palindromes  
+**Day 11 (Apr 20):** DSA Intro + Arrays (Traverse, Insert, Delete)  ✅
+**Day 12 (Apr 21):** Strings - Manipulation & Palindromes  ✅
 **Day 13 (Apr 22):** Sorting Techniques - Bubble, Selection, Insertion  
 **Day 14 (Apr 23):** Searching - Linear, Binary Search  
 **Day 15 (Apr 24):** Stack (Theory + Implementation)  
