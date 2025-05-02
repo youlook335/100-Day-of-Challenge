@@ -51,4 +51,5 @@ function isPalindrome(str) {
     let reversed = str.split("").reverse().join("");
     return str === reversed;
 }
+// agr is ma name asa ho ja ka ulta or sidha phrna par sahi parha jaya is ko ya true ya wo content dikhya ga
 console.log(isPalindrome("ji"));

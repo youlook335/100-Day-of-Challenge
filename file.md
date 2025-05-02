@@ -18,14 +18,14 @@
 **Day 11 (Apr 20):** DSA Intro + Arrays (Traverse, Insert, Delete)  ✅
 **Day 12 (Apr 21):** Strings - Manipulation & Palindromes  ✅
 Palindromes is Not 👀⏰⌚
-**Day 13 (Apr 22):** Sorting Techniques - Bubble, Selection, Insertion  
-**Day 14 (Apr 23):** Searching - Linear, Binary Search  
-**Day 15 (Apr 24):** Stack (Theory + Implementation)  
-**Day 16 (Apr 25):** Queue (Theory + Implementation)  
-**Day 17 (Apr 26):** Linked List - Singly  
-**Day 18 (Apr 27):** Linked List - Doubly + Practice  
-**Day 19 (Apr 28):** Practice DSA on LeetCode (5 Easy Qs)  
-**Day 20 (Apr 29):** DSA Concepts Review
+**Day 13 (Apr 22):** Sorting Techniques - Bubble, Selection, Insertion  👀⏰⌚
+**Day 14 (Apr 23):** Searching - Linear, Binary Search  👀⏰⌚
+**Day 15 (Apr 24):** Stack (Theory + Implementation)  👀⏰⌚
+**Day 16 (Apr 25):** Queue (Theory + Implementation)  👀⏰⌚
+**Day 17 (Apr 26):** Linked List - Singly  👀⏰⌚
+**Day 18 (Apr 27):** Linked List - Doubly + Practice  👀⏰⌚
+**Day 19 (Apr 28):** Practice DSA on LeetCode (5 Easy Qs)  👀⏰⌚
+**Day 20 (Apr 29):** DSA Concepts Review  👀⏰⌚
 
 ---
 
