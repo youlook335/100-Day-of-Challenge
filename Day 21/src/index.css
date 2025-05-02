@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.crd {
+    padding: 10px;
+    gap: 10px;
+    
+    display: flex;
+}
+.white {
+    padding: 10px;
+    border: 2px solid black;
+    width: 30vw;
+}

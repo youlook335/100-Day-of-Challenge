@@ -29,8 +29,8 @@ Palindromes is Not 👀⏰⌚
 
 ---
 
-**Day 21 (Apr 30):** React Basics - Components, JSX  
-**Day 22 (May 1):** Props & State in React  
+**Day 21 (Apr 30):** React Basics - Components, JSX  ✅
+**Day 22 (May 1):** Props & State in React  ✅
 **Day 23 (May 2):** React Hooks - useState, useEffect  
 **Day 24 (May 3):** useRef + useContext  
 **Day 25 (May 4):** Component Lifecycle + Best Practices  
