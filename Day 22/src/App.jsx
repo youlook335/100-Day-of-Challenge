@@ -1,9 +1,12 @@
 import React from 'react'
+import Hooks from './Hooks'
+import Lecture_2 from './Useeffect'
 
 const App = () => {
   return (
     <>
-      This is App Component
+      {/* <Hooks/> */}
+      <Lecture_2/>
     </>
   )
 }
