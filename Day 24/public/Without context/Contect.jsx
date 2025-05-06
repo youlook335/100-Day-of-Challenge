@@ -1,14 +1,12 @@
 import React from 'react'
 import Navbar from './component/Navbar'
 
-const Contect = () => {
+const contect = ({count}) => {
   return (
     <div>
-      Context Page
-      <br />
-      <Navbar/>
+      <Navbar count={count}/>
     </div>
   )
 }
 
-export default Contect
+export default contect
