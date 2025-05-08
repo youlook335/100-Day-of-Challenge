@@ -6,11 +6,10 @@ function Home() {
   const [todos, setTodos] = useState([])
   
   const handleEdit = () => {
-
+      colog("edit");
   }
   const handleDelete = () => {
-
-  }
+   }
   const handleAdd = () => {
     setTodos([...todos, {id:uuidv4(),todo, isCompleted: false}])
   }
@@ -19,14 +18,14 @@ function Home() {
     
   }
   const handleCheckbox = (e) => {
-    let id = e.target.name;  // Checkbox name is the ID
-    let index = todos.findIndex(item => item.id === id);  // Find the index of the todo
-  
-    if (index !== -1) {
-      let newTodos = [...todos];  // Create a copy of the todos array
-      newTodos[index].isCompleted = !newTodos[index].isCompleted;  // Toggle the completion status
-      setTodos(newTodos);  // Update the state with the modified array
-    }
+    let id = e.target.name;
+    console.log(`This is a Value of Id ${id}`);
+    
+    let index = todos.findIndex(item => item.id === id);
+      let newTodos = [...todos];            
+      console.log(`This is Index Value Index ${index}`);
+      newTodos[index].isCompleted = !newTodos[index].isCompleted;
+      setTodos(newTodos);
   }
   
 
@@ -44,11 +43,11 @@ function Home() {
       {
       todos.map((item, index) => {
   return <div key={index} className="todo my-3 flex w-1/2 justify-between">
-    <input name={todo.id} onChange={handleCheckbox} className='w-4' type="checkbox" value={item.isCompleted} id="" />
-      <div className={item.isCompleted ? "" : ""}>{item.todo}</div>
+    <input name={item.id} onChange={handleCheckbox} className='w-4' type="checkbox" value={item.isCompleted} id="" />
+      <div className={item.isCompleted ? "line-through" : "font-bold"}>{item.todo}</div>
       <div className="buttons">
         <button onClick={handleEdit} className='bg-violet-800 hover:bg-violet-950 p-2 py-1 rounded-md text-sm font-bold text-white mx-1'>Edit</button>
-        <button onClick={handleDelete} className='bg-violet-800 hover:bg-violet-950 p-2 py-1 rounded-md text-sm font-bold text-white mx-1'>Delete</button>
+        <button  onClick={handleDelete} className='bg-violet-800 hover:bg-violet-950 p-2 py-1 rounded-md text-sm font-bold text-white mx-1'>Delete</button>
       </div>
     </div>
   
