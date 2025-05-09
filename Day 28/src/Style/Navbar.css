@@ -1,0 +1,15 @@
+nav {
+    background-color: #2f2f2f;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+    gap: 20px;
+    padding: 20px 15px;
+}
+li {
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
