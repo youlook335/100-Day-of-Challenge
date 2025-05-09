@@ -1,10 +1,65 @@
 .contain {
+    padding: 50px;
     background-color: #2f2f2f;
     color: white;
 }
-.part1 {
-    /* width: 50%; */
-}
 .part1 h1 {
     text-align: center;
+}
+
+
+
+.range-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #f4f4f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.range-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.range-box p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.range-box input[type="range"] {
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
+  cursor: not-allowed;
+  appearance: none;
+  outline: none;
+}
+
+.range-box input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #4caf50;
+  border-radius: 50%;
+  cursor: not-allowed;
+}
+
+.range-box span {
+  font-size: 16px;
+  color: #555;
+  margin-top: 8px;
 }
