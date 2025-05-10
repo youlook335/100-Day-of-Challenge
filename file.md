@@ -36,12 +36,12 @@ Palindromes is Not 👀⏰⌚
 **Day 25 (May 4):** Component Lifecycle + Best Practices  👀⏰⌚
 **Day 26 (May 5):** Build Todo App with React  ✅
 **Day 27 (May 6):** Responsive Design + Styling in React ✅ 
-**Day 28 (May 7):** Portfolio Project with React  
-**Day 29 (May 8):** Polish Portfolio + Add Animations  
-**Day 30 (May 9):** React Concepts Revision
+**Day 28 (May 7):** Portfolio Project with React  ✅
+**Day 29 (May 8):** Polish Portfolio + Add Animations  ✅
+**Day 30 (May 9):** React Concepts Revision✅
 
 ---
-
+ 
 **Day 31 (May 10):** Recursion Basics + Problems  
 **Day 32 (May 11):** HashMap & Set in JS  
 **Day 33 (May 12):** Sliding Window Pattern  
