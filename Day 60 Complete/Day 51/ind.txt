@@ -1,0 +1,56 @@
+🔧 پریکٹس مشق: “My Website” Git Project
+🎯 مقصد:
+ایک Git repo بنانا
+
+فائل شامل کرکے commit کرنا
+
+نئی branch میں تبدیلی لانا
+
+🧩 Step-by-Step Instructions:
+✅ Step 1: نیا فولڈر اور Git init
+bash
+Copy
+Edit
+mkdir my-website
+cd my-website
+git init
+➡️ یہ فولڈر Git کے تحت آ گیا۔
+
+✅ Step 2: ایک HTML فائل بنائیں اور commit کریں
+bash
+Copy
+Edit
+echo "<h1>Welcome to My Website</h1>" > index.html
+git add index.html
+git commit -m "Initial commit with homepage"
+➡️ تم نے پہلی commit کر دی۔
+
+✅ Step 3: نئی branch بناؤ اور اس پر جاؤ
+bash
+Copy
+Edit
+git branch new-footer
+git checkout new-footer
+➡️ اب تم new-footer branch پر ہو۔
+
+✅ Step 4: نئی فائل یا تبدیلی کرو
+bash
+Copy
+Edit
+echo "<footer>Contact us at example@email.com</footer>" >> index.html
+git add index.html
+git commit -m "Added footer section"
+➡️ اب یہ commit صرف new-footer branch پر ہے۔
+
+✅ Step 5: واپس main branch پر جاؤ
+bash
+Copy
+Edit
+git checkout main
+🧠 تم نے کیا سیکھا؟
+git init: Repo شروع کی
+
+git commit: تبدیلی محفوظ کی
+
+git branch: الگ راستہ/feature بنایا
+

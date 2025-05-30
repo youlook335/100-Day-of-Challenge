@@ -1,0 +1,23 @@
+🔹 2. PRs (Pull Requests)
+مطلب:
+"Pull Request" کا مطلب ہے:
+کسی نے تبدیلی کی ہے اور اب وہ کہہ رہا ہے کہ اس تبدیلی کو اصل code میں شامل کر لو۔
+
+کب بنتی ہے؟
+جب کوئی الگ branch میں کام کرتا ہے اور پھر اپنی changes main یا کسی اور branch میں merge کروانا چاہتا ہے۔
+
+Steps:
+نئی branch میں کام کرو
+
+GitHub پر push کرو
+
+"Compare & Pull Request" پر کلک کرو
+
+PR title + description لکھو
+
+Submit کرو
+
+Example:
+Ali نے feature-login branch پر کام کیا اور PR کھولا:
+
+"Please merge login feature into main."

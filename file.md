@@ -17,7 +17,6 @@
 
 **Day 11 (Apr 20):** DSA Intro + Arrays (Traverse, Insert, Delete)  ✅
 **Day 12 (Apr 21):** Strings - Manipulation & Palindromes  ✅
-Palindromes is Not 👀⏰⌚
 **Day 13 (Apr 22):** Sorting Techniques - Bubble, Selection, Insertion ✅
 **Day 14 (Apr 23):** Searching - Linear, Binary Search  👀⏰⌚
 **Day 15 (Apr 24):** Stack (Theory + Implementation)  👀⏰⌚
@@ -68,8 +67,8 @@ Palindromes is Not 👀⏰⌚
 
 ---
 
-**Day 51 (May 30):** Git Basics: init, commit, branch  
-**Day 52 (May 31):** GitHub - Repos, PRs, Issues  
+**Day 51 (May 30):** Git Basics: init, commit, branch  ✅
+**Day 52 (May 31):** GitHub - Repos, PRs, Issues  ✅
 **Day 53 (Jun 1):** Firebase Setup + Authentication  
 **Day 54 (Jun 2):** Firestore Basics  
 **Day 55 (Jun 3):** Firebase Hosting  

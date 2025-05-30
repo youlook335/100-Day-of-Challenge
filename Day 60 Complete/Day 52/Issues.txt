@@ -1,0 +1,25 @@
+🔹 3. Issues
+مطلب:
+"Issues" GitHub پر task management کا طریقہ ہے۔
+
+استعمال:
+کوئی bug ہو
+
+کوئی نئی feature کا suggestion
+
+کوئی سوال ہو
+
+کسی کو کوئی کام assign کرنا ہو
+
+Format:
+Title: مختصر بیان
+
+Description: مکمل وضاحت
+
+Labels: bug, enhancement, question
+
+Assignee: جس کو یہ کام کرنا ہے
+
+Example:
+Title: "Fix navbar responsiveness"
+Description: "Navbar mobile view میں خراب ہو رہا ہے...

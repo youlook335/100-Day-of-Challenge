@@ -1,0 +1,27 @@
+🔹 1. Repos (Repositories)
+مطلب:
+"Repo" یعنی "Repository" ایک folder یا project ہوتا ہے جسے GitHub پر رکھا جاتا ہے۔
+
+اس میں ہوتا کیا ہے؟
+تمہارا code
+
+commits کا record
+
+branches
+
+settings (جیسے README, license)
+
+کیسے بناتے ہیں؟
+GitHub پر جاؤ
+
+"New Repository" پر کلک کرو
+
+نام دو، optionally README چیک کرو
+
+Create Repository
+
+URL format:
+arduino
+Copy
+Edit
+https://github.com/username/repo-name
