@@ -54,7 +54,7 @@
 
 ---
 
-**Day 41 (May 20):** React Router DOM Basics  
+**Day 41 (May 20):** React Router DOM Basics  ✅
 **Day 42 (May 21):** Dynamic Routes, Params, Redirects  
 **Day 43 (May 22):** API Handling with Axios  
 **Day 44 (May 23):** Fetch Data + Display UI  
@@ -69,7 +69,7 @@
 
 **Day 51 (May 30):** Git Basics: init, commit, branch  ✅
 **Day 52 (May 31):** GitHub - Repos, PRs, Issues  ✅
-**Day 53 (Jun 1):** Firebase Setup + Authentication  
+**Day 53 (Jun 1):** Firebase Setup + Authentication  ✅
 **Day 54 (Jun 2):** Firestore Basics  
 **Day 55 (Jun 3):** Firebase Hosting  
 **Day 56 (Jun 4):** Deploy React Project to Firebase  
