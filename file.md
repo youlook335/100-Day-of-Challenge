@@ -42,8 +42,8 @@
 ---
  
 **Day 31 (May 10):** Recursion Basics + Problems  ✅
-**Day 32 (May 11):** HashMap & Set in JS  
-**Day 33 (May 12):** Sliding Window Pattern  
+**Day 32 (May 11):** HashMap & Set in JS  ✅
+**Day 33 (May 12):** Sliding Window Pattern  ✅
 **Day 34 (May 13):** Two Pointer Technique  
 **Day 35 (May 14):** Backtracking - Subsets  
 **Day 36 (May 15):** Backtracking - Permutations  
