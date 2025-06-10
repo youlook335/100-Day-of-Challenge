@@ -1,5 +1,6 @@
 import React from 'react'
 import DataFetcher from './DataFetcher'
+import './App.css';
 
 function App() {
   return (

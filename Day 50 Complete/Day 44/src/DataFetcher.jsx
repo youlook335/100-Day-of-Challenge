@@ -4,6 +4,7 @@ function DataFetcher() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [darkMode, setDarkMode] = useState(false); // 🌙 dark mode toggle
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
@@ -21,72 +22,41 @@ function DataFetcher() {
       });
   }, []);
 
-  if (loading) return <p style={styles.loading}>Loading...</p>;
-  if (error) return <p style={styles.error}>Error: {error}</p>;
+  if (loading) return <p className="loading">Loading...</p>;
+  if (error) return <p className="error">Error: {error}</p>;
 
-  // Agar sirf pehla user dikhana hai:
-return (
- <div style={styles.container}>
-  <h1 style={styles.heading}>Users List</h1>
-  {data.map(user => (
-    <div key={user.id} style={styles.card}>
-      <h3>{user.id}</h3>
-      <h1 style={styles.title}>{user.name}</h1>
-      <p style={styles.body}><strong>Username:</strong> {user.username}</p>
-      <p style={styles.body}><strong>Phone:</strong> {user.phone}</p>
-      <p style={styles.body}><strong>Website:</strong> {user.website}</p>
-      <p style={styles.body}><strong>Address:</strong> {user.address.street}, {user.address.city}</p>
-      <p style={styles.body}><strong>Company:</strong> {user.company.name}</p>
-      <p style={styles.body}><strong>CatchPhrase:</strong> {user.company.catchPhrase}</p>
-      <p style={styles.body}><strong>BS:</strong> {user.company.bs}</p>
-      <p style={styles.body}><strong>Zipcode:</strong> {user.address.zipcode}</p>
-      <p style={styles.body}><strong>Suite:</strong> {user.address.suite}</p>
-      <p style={styles.body}><strong>Geo:</strong> {user.address.geo.lat}, {user.address.geo.lng}</p>
-      <p style={styles.body}><strong>Email:</strong> {user.email}</p>
+  return (
+    <div className={darkMode ? 'container dark' : 'container'}>
+      <div className="header">
+        <h1>Users List</h1>
+        <button className="toggle" onClick={() => setDarkMode(!darkMode)}>
+          {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
+        </button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th><th>Name</th><th>Username</th><th>Email</th>
+            <th>Phone</th><th>City</th><th>Company</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map(user => (
+            <tr key={user.id}>
+              <td>{user.id}</td>
+              <td>{user.name}</td>
+              <td>{user.username}</td>
+              <td>{user.email}</td>
+              <td>{user.phone}</td>
+              <td>{user.address.city}</td>
+              <td>{user.company.name}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
-  ))}
-</div>
-
-);
-
+  );
 }
-
-const styles = {
-  container: {
-    maxWidth: '700px',
-    margin: '30px auto',
-    padding: '20px',
-    fontFamily: 'Arial, sans-serif',
-  },
-  heading: {
-    textAlign: 'center',
-    color: '#333',
-    marginBottom: '25px',
-  },
-  card: {
-    backgroundColor: '#f9f9f9',
-    padding: '15px 20px',
-    marginBottom: '15px',
-    borderRadius: '8px',
-    boxShadow: '0 2px 5px rgba(0,0,0,0.1)',
-  },
-  title: {
-    color: '#007bff',
-    marginBottom: '10px',
-  },
-  body: {
-    color: '#555',
-  },
-  loading: {
-    textAlign: 'center',
-    fontSize: '18px',
-    color: '#666',
-  },
-  error: {
-    textAlign: 'center',
-    fontSize: '18px',
-    color: 'red',
-  }
-};
 
 export default DataFetcher;

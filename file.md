@@ -57,7 +57,7 @@
 **Day 41 (May 20):** React Router DOM Basics  ✅
 **Day 42 (May 21):** Dynamic Routes, Params, Redirects  
 **Day 43 (May 22):** API Handling with Axios  ✅
-**Day 44 (May 23):** Fetch Data + Display UI  
+**Day 44 (May 23):** Fetch Data + Display UI  ✅
 **Day 45 (May 24):** Context API Deep Dive  
 **Day 46 (May 25):** Build Blog App using API  
 **Day 47 (May 26):** Polish Blog App UI  
@@ -81,7 +81,7 @@
 ---
 
 **Day 61 (Jun 9):** Trees - Intro + Binary Tree  
-**Day 62 (Jun 10):** Binary Search Tree  
+**Day 62 (Jun 10):** `Binary Search Tree  
 **Day 63 (Jun 11):** Tree Traversals (Inorder, Pre, Post)  
 **Day 64 (Jun 12):** Graphs - Adjacency List, Matrix  
 **Day 65 (Jun 13):** Graph Traversal - BFS, DFS  
