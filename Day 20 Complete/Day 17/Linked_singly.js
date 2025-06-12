@@ -1,4 +1,6 @@
 console.log("This is a linked singly list implementation in JavaScript");
+// https://chatgpt.com/c/684a582c-bf14-8011-94e2-6ae21ffee514
+// https://www.youtube.com/watch?v=TjeTc1f3ebY
 
 // Linked List in javascript
 
@@ -99,7 +101,6 @@ class LinkedList {
     }
     print() {
         let current = this.head;
-        let result = '';
         while (current) {
             console.log(current.data);
             current = current.next; // Traverse through the list
@@ -107,3 +108,28 @@ class LinkedList {
     }
 }
 const list = new LinkedList();
+
+list.addLast(30);
+list.addAt(0,20);
+list.addFirst(10);
+list.addLast(50);
+list.removeTop();
+list.addLast(60);
+list.addFirst(5);
+// agr hum is ko use kra to hma phela likhna hoga ka indx ki value itni ho tab hi ja kar is ko wahi rkh da ga jo hum na indx ka baad value dali hia
+list.addAt(2,40);
+list.print();
+
+
+
+
+// 🔚 خلاصہ:
+// Method	کام کیا کرتا ہے
+// addFirst()	شروع میں node ڈالنا
+// addLast()	آخر میں node ڈالنا
+// addAt(index)	کسی خاص جگہ پر node ڈالنا
+// removeTop()	شروع والا node ہٹانا
+// removeLast()	آخر والا node ہٹانا
+// removeAt(index)	خاص index والا node ہٹانا
+// print()	پورا list print کرنا
+// size()	list کا size count کرنا
