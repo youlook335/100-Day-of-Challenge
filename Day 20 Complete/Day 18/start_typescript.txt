@@ -1,0 +1,16 @@
+Agr Mujha Javscript sa Typescript pa convert hona ha to mujah sab sa phela ya sara Topic Prhna para ga
+
+| Topic                        | وقت (تقریباً) |
+| ---------------------------- | ------------- |
+| Basic Types (number, string) | 20 mins       |
+| Functions with Types         | 20 mins       |
+| Classes + Constructor Types  | 30 mins       |
+| Interfaces / Type Aliases    | 30 mins       |
+| Arrays & Custom Types        | 20 mins       |
+| Null Handling / Optional     | 20 mins       |
+| Generics (Stack/Queue)       | 40 mins       |
+| Practice + Error Fixing      | 30–60 mins    |
+
+
+✅ Total Time: 3.5 – 4 hours (ایک دن میں possible)
+اگر آپ چاہیں، تو میں آپ کو step-by-step roadmap + practice files بنا دیتا ہوں تاکہ آپ ایک دن میں سیکھ لیں۔ بتائیں؟
