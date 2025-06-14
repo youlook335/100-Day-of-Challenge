@@ -71,11 +71,9 @@ class LinkedList {
         this.head = this.head.next; // Update head to the next node
     }
     removeLast(){
-        if(!this.head){
-            return; // If list is empty, do nothing
-        }
+        if(!this.head) return; // If list is empty, do nothing
         let current = this.head;
-        while (current.next.next){
+        while (current.next){
             current = current.next; // If only one node, set head to null
         }
         current.next = null; // Traverse to the last node
