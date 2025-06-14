@@ -1,0 +1,32 @@
+✅ 1. Primitive Data Types
+----------------------------------------
+1. number     -> let age: number = 25;
+2. string     -> let name: string = "Ali";
+3. boolean    -> let isLoggedIn: boolean = true;
+4. bigint     -> let big: bigint = 9007199254n;
+5. null       -> let empty: null = null;
+6. undefined  -> let data: undefined = undefined;
+7. symbol     -> let sym = Symbol("id");
+
+✅ 2. Non-Primitive (Reference) Data Types
+----------------------------------------
+8. object     -> { name: "Ali", age: 30 }
+9. array      -> let arr: number[] = [1, 2, 3];
+10. tuple     -> let data: [number, string] = [1, "Ali"];
+11. class     -> class Person { name: string }
+12. interface -> interface User { name: string }
+13. function  -> function sum(a: number, b: number): number
+
+✅ 3. Special & Advanced Types
+----------------------------------------
+14. enum             -> enum Color { Red, Green, Blue }
+15. any              -> let x: any = 5;
+16. unknown          -> let x: unknown = value;
+17. never            -> function err(): never { throw "error"; }
+18. void             -> function log(): void { console.log("Hi"); }
+19. function types   -> (a: number, b: number) => number
+20. union types      -> let value: string | number = "Hi";
+21. intersection     -> type A = { x: number }; type B = { y: string }; A & B
+22. literal types    -> type Mode = "on" | "off";
+23. type aliases     -> type User = { name: string }
+24. generics         -> function identity<T>(val: T): T { return val; }
