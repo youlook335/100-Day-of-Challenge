@@ -1,0 +1,14 @@
+✅ Two Pointer Technique کا مطلب:
+Two Pointer ایک الگورتھم کی تکنیک ہے، Data Structure نہیں — یہ array یا string پر ایسے problems حل کرنے کے لیے استعمال ہوتی ہے جہاں دو indices سے ساتھ ساتھ کام کیا جائے۔
+
+🔧 یہ "کیا کیا کام" کرتا ہے؟
+
+
+| ✅ کام                        | 🧠 مطلب                                            |
+| ---------------------------- | -------------------------------------------------- |
+| 1. Target sum تلاش کرنا      | Sorted array میں دو numbers جو مل کر target بنائیں |
+| 2. Array کو reverse کرنا     | Start سے End تک elements کو swap کرنا              |
+| 3. Duplicates remove کرنا    | Sorted array میں unique values رکھنا               |
+| 4. Palindrome check کرنا     | آگے پیچھے سے match چیک کرنا                        |
+| 5. Container With Most Water | Max area calculate کرنا                            |
+| 6. Trapping Rain Water       | بارش کا پانی collect کرنا                          |
