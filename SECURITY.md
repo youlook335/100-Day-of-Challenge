@@ -1,21 +1,34 @@
-# Security Policy
+# 🔐 Security Policy
 
-## Supported Versions
-
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+## ✅ Supported Versions
 
 | Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+|---------|--------------------|
+| 5.1.x   | ✅ Supported        |
+| 5.0.x   | ❌ Not Supported    |
+| 4.0.x   | ✅ Supported        |
+| < 4.0   | ❌ Not Supported    |
 
-## Reporting a Vulnerability
+We actively maintain and provide security updates for the versions marked as **Supported**.
 
-Use this section to tell people how to report a vulnerability.
+---
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+## 🛡 Reporting a Vulnerability
+
+If you discover a security vulnerability, please follow these steps:
+
+1. **Email Us**: Send a detailed report to **security@yourdomain.com** (replace with your contact).
+2. **Details to Include**:
+   - Description of the vulnerability.
+   - Steps to reproduce.
+   - Potential impact.
+   - Suggested fix (if any).
+
+3. **Response Timeline**:
+   - You will receive an acknowledgment within **48 hours**.
+   - We aim to investigate and respond with a resolution plan within **5 business days**.
+   - In case of valid issues, we will provide fixes in the next patch release.
+
+4. **Confidentiality**:
+   - Please do not disclose vulnerabilities publicly before a fix is released.
+   - We appreciate responsible disclosure and will give credit if desired.
