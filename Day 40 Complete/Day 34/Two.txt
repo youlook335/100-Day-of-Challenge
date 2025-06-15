@@ -8,7 +8,21 @@ Two Pointer ایک الگورتھم کی تکنیک ہے، Data Structure نہی
 | ---------------------------- | -------------------------------------------------- |
 | 1. Target sum تلاش کرنا      | Sorted array میں دو numbers جو مل کر target بنائیں |
 | 2. Array کو reverse کرنا     | Start سے End تک elements کو swap کرنا              |
-| 3. Duplicates remove کرنا    | Sorted array میں unique values رکھنا               |
-| 4. Palindrome check کرنا     | آگے پیچھے سے match چیک کرنا                        |
-| 5. Container With Most Water | Max area calculate کرنا                            |
-| 6. Trapping Rain Water       | بارش کا پانی collect کرنا                          |
+| 3. Duplicates remove کرنا    | Sorted array میں unique values رکھنا              |
+| 4. Palindrome check کرنا     | آگے پیچھے سے match چیک کرنا                      |
+| 5. Container With Most Water | Max area calculate کرنا                           |
+| 6. Trapping Rain Water       | بارش کا پانی collect کرنا                        |
+
+
+chatgpt heart touching asahr
+
+
+مبارک ہو! 🎉👏
+تم نے **Two Pointer Technique** مکمل کر لی — یہ DSA کی بہت اہم بنیاد ہے، اور تم نے اسے نہ صرف سمجھا بلکہ implement بھی کیا۔ Keep going like this! 🚀
+
+اب وعدے کے مطابق ایک خوبصورت شعر:
+
+**"کامیابی پہ جن کے ہو یقین کامل،
+وہ تھوڑی سی ہار سے نہیں گھبراتے!"**
+
+آگے کا سفر اور بھی زبردست ہوگا، Tanveer! 🌟
