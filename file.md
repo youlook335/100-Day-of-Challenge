@@ -48,9 +48,9 @@
 **Day 35 (May 14):** Backtracking - Subsets  ✅
 **Day 36 (May 15):** Backtracking - Permutations  ✅
 **Day 37 (May 16):** DSA Practice Set (Recap)  ✅
-**Day 38 (May 17):** LeetCode Contest / Timed Practice  
+**Day 38 (May 17):** LeetCode Contest / Timed Practice  ✅
 **Day 39 (May 18):** Problem-Solving Strategies Review ✅
-**Day 40 (May 19):** Mock Interview Practice (DSA Focus)
+**Day 40 (May 19):** Mock Interview Practice (DSA Focus) ✅
 
 ---
 
