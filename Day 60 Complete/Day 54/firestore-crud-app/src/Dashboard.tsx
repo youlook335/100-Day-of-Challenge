@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { db } from "./firebase";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
+import "./Dashboard.css"; // 👈 CSS file import
 
 type UserData = {
   name: string;
@@ -36,11 +37,7 @@ export default function Dashboard() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const newUser = {
-      ...formData,
-      createdAt: Timestamp.now(),
-    };
-
+    const newUser = { ...formData, createdAt: Timestamp.now() };
     try {
       await addDoc(collection(db, "users"), newUser);
       alert("✅ Submitted!");
@@ -63,33 +60,11 @@ export default function Dashboard() {
   };
 
   return (
-    <div
-      style={{
-        fontFamily: "Arial, sans-serif",
-        background: "#eef1f5",
-        minHeight: "100vh",
-        padding: "40px",
-      }}
-    >
-      <h1 style={{ textAlign: "center", color: "#4CAF50", marginBottom: "30px" }}>📝 User Form + 📋 Table</h1>
-
-      <div style={{
-        display: "flex",
-        gap: "30px",
-        flexWrap: "wrap",
-        justifyContent: "center",
-        alignItems: "flex-start",
-      }}>
-        {/* Form */}
-        <div style={{
-          flex: "1",
-          minWidth: "350px",
-          background: "#fff",
-          padding: "20px",
-          borderRadius: "10px",
-          boxShadow: "0 0 10px rgba(0,0,0,0.1)"
-        }}>
-          <h2 style={{ color: "#333", marginBottom: "20px" }}>Fill Details</h2>
+    <div className="dashboard">
+      <h1 className="dashboard-title">📝 User Form + 📋 Table</h1>
+      <div className="dashboard-container">
+        <div className="form-box">
+          <h2>Fill Details</h2>
           <form onSubmit={handleSubmit}>
             {[
               { label: "Name", name: "name" },
@@ -101,102 +76,51 @@ export default function Dashboard() {
               { label: "CNIC", name: "cnic" },
               { label: "Father CNIC", name: "fatherCnic" },
             ].map(({ label, name, type = "text" }) => (
-              <div key={name} style={{ marginBottom: "12px" }}>
-                <label style={{ fontWeight: "bold", display: "block", marginBottom: "5px" }}>{label}</label>
-                <input
-                  type={type}
-                  name={name}
-                  value={(formData as any)[name]}
-                  onChange={handleChange}
-                  required
-                  style={{
-                    width: "100%",
-                    padding: "8px",
-                    borderRadius: "5px",
-                    border: "1px solid #ccc",
-                  }}
-                />
-              </div>
-            ))}
-            <div style={{ marginBottom: "15px" }}>
-              <label style={{ fontWeight: "bold", display: "block", marginBottom: "5px" }}>Address</label>
+                  <div className="form-group" key={name}>
+                    <label>{label}</label>
+                    <input
+                      type={type}
+                      name={name}
+                      value={(formData as any)[name]}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+                ))}
+            <div className="form-group">
+              <label>Address</label>
               <textarea
                 name="address"
                 value={formData.address}
                 onChange={handleChange}
                 required
-                style={{
-                  width: "100%",
-                  padding: "8px",
-                  borderRadius: "5px",
-                  border: "1px solid #ccc",
-                }}
               />
             </div>
-            <button
-              type="submit"
-              style={{
-                width: "100%",
-                padding: "12px",
-                background: "#4CAF50",
-                color: "white",
-                fontWeight: "bold",
-                border: "none",
-                borderRadius: "5px",
-                cursor: "pointer",
-              }}
-            >
-              Submit
-            </button>
+            <button type="submit">Submit</button>
           </form>
         </div>
 
-        {/* Table */}
-        <div style={{
-          flex: "2",
-          minWidth: "400px",
-          background: "#fff",
-          padding: "20px",
-          borderRadius: "10px",
-          boxShadow: "0 0 10px rgba(0,0,0,0.1)",
-          overflowX: "auto"
-        }}>
-          <h2 style={{ color: "#333", marginBottom: "20px" }}>Submitted Data</h2>
+        {/* Submitted Data List */}
+        <div className="table-box">
+          <h2>Submitted Data</h2>
           {users.length > 0 ? (
-            <table border={1} cellPadding={8} style={{ width: "100%", borderCollapse: "collapse" }}>
-              <thead style={{ background: "#4CAF50", color: "white" }}>
-                <tr>
-                  <th>Name</th>
-                  <th>Father</th>
-                  <th>Email</th>
-                  <th>Age</th>
-                  <th>Qualification</th>
-                  <th>DOB</th>
-                  <th>CNIC</th>
-                  <th>Father CNIC</th>
-                  <th>Address</th>
-                </tr>
-              </thead>
-              <tbody>
-                {users.map((user, i) => (
-                  <tr key={i} style={{ background: i % 2 === 0 ? "#f9f9f9" : "#fff" }}>
-                    <td>{user.name}</td>
-                    <td>{user.fatherName}</td>
-                    <td>{user.email}</td>
-                    <td>{user.age}</td>
-                    <td>{user.qualification}</td>
-                    <td>{user.dob}</td>
-                    <td>{user.cnic}</td>
-                    <td>{user.fatherCnic}</td>
-                    <td>{user.address}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+            users.map((user, i) => (
+              <div key={i} className="user-card">
+                <p><strong>Name:</strong> {user.name}</p>
+                <p><strong>Father Name:</strong> {user.fatherName}</p>
+                <p><strong>Email:</strong> {user.email}</p>
+                <p><strong>Age:</strong> {user.age}</p>
+                <p><strong>Qualification:</strong> {user.qualification}</p>
+                <p><strong>DOB:</strong> {user.dob}</p>
+                <p><strong>CNIC:</strong> {user.cnic}</p>
+                <p><strong>Father CNIC:</strong> {user.fatherCnic}</p>
+              </div>
+            ))
           ) : (
-            <p style={{ color: "#999" }}>No data submitted yet.</p>
+            <p style={{ color: "#888" }}>No data submitted yet.</p>
           )}
         </div>
+
       </div>
     </div>
   );
