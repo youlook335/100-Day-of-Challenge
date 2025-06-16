@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDEmYGPJPMhikh8uaq41tNYOItdPJ14RfM",
+  apiKey: "AIzaSyDEmYGPJPMhikh8uaq41tNYOItdPJ14RfM",
   authDomain: "firestore-crud-ts.firebaseapp.com",
   projectId: "firestore-crud-ts",
   storageBucket: "firestore-crud-ts.firebasestorage.app",
@@ -14,3 +14,4 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
+export { app }; // 👈 یہ لائن add کرو!
