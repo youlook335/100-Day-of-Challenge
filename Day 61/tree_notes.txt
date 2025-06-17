@@ -1,0 +1,76 @@
+
+📁 File: tree_notes.txt
+
+🌳 Tree Concepts Summary
+
+1. ✅ Node:
+   - Tree ka aik unit (value + connection)
+   - Har Node ya to Parent ho sakta hai ya Leaf
+
+2. ✅ Parent Node:
+   - Jo kisi child ko point karta hai (connection deta hai)
+
+3. ✅ Child Node:
+   - Jo kisi parent se connected hota hai
+
+4. ✅ Leaf Node:
+   - Jis Node ke koi children nahi hote
+   - Agar Node ka koi child nahi → To wo "Leaf" kehlata hai
+
+5. ✅ Edge:
+   - Dono Nodes ke darmiyan ka connection line (Parent se Child tak)
+   - Har connection aik "Edge" hota hai
+
+----------------------------------------
+
+📘 Example 1: (Simple Tree / Generic Tree)
+
+        1
+      / | \
+     2  3  4
+           |
+           5
+
+Explanation:
+1 ---> 2    ✅ (Edge)
+1 ---> 3    ✅ (Edge)
+1 ---> 4    ✅ (Edge)
+4 ---> 5    ✅ (Edge)
+
+- Node 1 = Parent (3 children)
+- Node 2, 3 = Leaf (koi child nahi)
+- Node 4 = Parent (ek child: 5)
+- Node 5 = Leaf (koi child nahi)
+- Total Edges = 4
+
+----------------------------------------
+
+📘 Example 2: (Binary Tree)
+
+        10
+       /  \
+      20   30
+     /     \
+    40      50
+
+Explanation:
+10 ---> 20   ✅ (Edge - Left Child)
+10 ---> 30   ✅ (Edge - Right Child)
+20 ---> 40   ✅ (Edge - Left Child)
+30 ---> 50   ✅ (Edge - Right Child)
+
+- Node 10 = Parent (2 children)
+- Node 20 = Parent (1 child)
+- Node 30 = Parent (1 child)
+- Node 40, 50 = Leaf (koi child nahi)
+- Total Nodes = 5 → Total Edges = 4
+
+----------------------------------------
+
+🧠 Important Rules:
+
+- Jis node ke children nahi → Wo **Leaf** hota hai ✅
+- Jis node ke children hain → Wo **Parent** hota hai ✅
+- Har Parent → Child relation aik **Edge** hota hai ✅
+- Total Edges = Total Nodes - 1
+
