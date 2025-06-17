@@ -88,20 +88,6 @@ Over the course of 100 days, I committed to learning and implementing:
 
 ---
 
-## 🚀 How to Use This Repo
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/100-days-of-code
-
-# Navigate into the folder
-cd 100-days-of-code
-
-# Open index files or folders for daily code and notes
-```
-
----
-
 ## 📍 Milestone Highlights
 
 | Day | Milestone |
