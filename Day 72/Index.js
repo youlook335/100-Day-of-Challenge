@@ -1,5 +1,5 @@
 // https://chatgpt.com/c/6854e7fa-455c-8011-8d96-b54c3c16c80f
-const express = require("express");
+const express = createRequiree("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -15,6 +15,10 @@ app.get("/contact", (req, res) => {
 app.get("/help", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
 });
+
+app.use((req, res) => {
+  res.status(404).send("<h1>Page not Found<h1/>")
+})
 
 const start = async () => {
   try {
