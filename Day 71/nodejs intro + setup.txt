@@ -1,0 +1,60 @@
+
+📘 Node.js Introduction + Setup (Day 71)
+
+🔹 What is Node.js?
+Node.js is a JavaScript runtime built on Chrome's V8 engine.
+It allows you to run JavaScript on the server (backend), not just in the browser.
+
+🔹 Why use Node.js?
+- Non-blocking I/O (asynchronous)
+- Perfect for building APIs and backend services
+- Uses JavaScript for server-side logic
+
+🔹 How to Set Up Node.js:
+
+1. Download and Install from:
+   https://nodejs.org (LTS version recommended)
+
+2. Check if installed:
+   node -v
+   npm -v
+
+3. Create a simple file:
+   index.js
+   ------------------
+   console.log("Hello from Node.js");
+
+4. Run your file:
+   node index.js
+
+5. Initialize npm in your folder:
+   npm init -y
+
+🔹 Node.js Key Terms:
+- node: command to run JS files
+- npm: Node package manager (to install libraries)
+- package.json: file that stores project metadata and dependencies
+
+✔️ Once these steps are done, you’re ready to start backend development with Node.js!
+
+🔹 How Node.js Works:
+- Node.js uses Chrome’s V8 engine to convert JavaScript code into machine code.
+- It runs JavaScript code outside of the browser, on your operating system.
+- It uses an event-driven, non-blocking I/O model, making it lightweight and efficient.
+
+🔹 Which language does Node.js run?
+- Node.js runs JavaScript only.
+- But with tools and transpilers, it can also work with TypeScript (compiled to JavaScript).
+
+🔹 What is Node.js used for?
+✅ Backend development (servers & APIs)
+✅ REST APIs & GraphQL APIs
+✅ Real-time applications (like chat apps using Socket.io)
+✅ File handling and data processing
+✅ Command-line tools (CLI apps)
+✅ Hosting servers (like Express.js)
+✅ Microservices and serverless functions
+
+🔹 Summary:
+Node.js lets you use JavaScript outside the browser, mainly for backend development.
+It’s powerful, fast, and great for scalable applications.
