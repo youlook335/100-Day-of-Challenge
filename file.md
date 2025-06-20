@@ -93,8 +93,8 @@
 
 ---
 
-**Day 71 (Jun 19):** Node.js Intro + Setup  
-**Day 72 (Jun 20):** Express.js - Basics + Routing  
+**Day 71 (Jun 19):** Node.js Intro + Setup  ✅
+**Day 72 (Jun 20):** Express.js - Basics + Routing ✅ 
 **Day 73 (Jun 21):** Middleware + REST API  
 **Day 74 (Jun 22):** MongoDB + Mongoose  
 **Day 75 (Jun 23):** CRUD Operations (User Model)  
