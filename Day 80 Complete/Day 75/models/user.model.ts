@@ -9,4 +9,4 @@ const userschema = new mongoose.Schema({
     isStudent: Boolean,
 })
 
-export const User = mongoose.model("User", userschema,"Employee")
+export const User = mongoose.model("User", userschema,"Multiple")
