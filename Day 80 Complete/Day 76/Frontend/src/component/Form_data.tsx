@@ -12,7 +12,7 @@ function Form_data() {
     const handlesubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         try {
-            const res = await axios.post('/api/feedback', FormData);
+            const res = await axios.post('/api/feedback', Form_data);
             setresponse(res.data.message)
         } catch (err) {
             setresponse('Something went wrong!');
