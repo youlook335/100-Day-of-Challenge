@@ -1,0 +1,45 @@
+frontend
+
+
+mkdir frontend
+cd frontend
+npm create vite@latest . -- --template react-ts
+npm install
+npm run dev
+
+
+
+
+backned
+
+
+mkdir backend
+cd backend
+npm init -y
+npm install express mongoose cors dotenv
+npm install -D typescript ts-node-dev @types/node @types/express
+
+npx tsc --init
+
+
+backend
+tsconfoggo chng
+
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true
+  }
+}
+
+
+echo. > src\index.ts
+
+"scripts": {
+  "dev": "ts-node-dev src/index.ts"
+}
+  
