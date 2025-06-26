@@ -1,8 +1,8 @@
-import express, { Request, Response } from 'express';
+import express, { Application, Request, Response } from 'express';
 import cors from 'cors';
 import jwt from 'jsonwebtoken';
 
-const app = express();
+const app: Application = express();
 const PORT = 3000;
 
 app.use(cors());
@@ -10,25 +10,24 @@ app.use(express.json());
 
 const user = {
   email: "abc@gmail.com",
-  password: 123456,
+  password: "123456",
   name: "Hassan"
 };
 
 const JWT_SECRET = "my_super_secret_key";
 
 app.get('/', (req: Request, res: Response) => {
-  res.send('JWT Auth Backend is Ready');
+  res.send("JWT Auth Backend is Ready");
 });
 
-app.post("/api/login", (req: Request, res: Response) => {
+app.post('/api/login', (req: Request, res: Response) => {
   const { email, password } = req.body;
 
   if (email === user.email && password === user.password) {
-    const token = jwt.sign({ email, name: user.name }, JWT_SECRET, {
-      expiresIn: "1h",
-    });
+    const token = jwt.sign({ email, name: user.name }, JWT_SECRET, { expiresIn: "1h" });
     return res.json({ message: "Login Successful", token });
   }
+
   return res.status(401).json({ message: "Invalid Credentials" });
 });
 
@@ -50,5 +49,5 @@ app.get('/api/secret', (req: Request, res: Response) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`🚀 Server running on http://localhost:${PORT}`);
 });
