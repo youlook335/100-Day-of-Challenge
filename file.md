@@ -99,7 +99,7 @@
 **Day 74 (Jun 22):** MongoDB + Mongoose  ✅
 **Day 75 (Jun 23):** CRUD Operations (User Model)  ✅
 **Day 76 (Jun 24):** Connect React with Express  ✅
-**Day 77 (Jun 25):** Authentication with JWT  
+**Day 77 (Jun 25):** Authentication with JWT  ✅
 **Day 78 (Jun 26):** Build: Auth System Backend  
 **Day 79 (Jun 27):** Finalize API + Test with Postman  
 **Day 80 (Jun 28):** Backend Review

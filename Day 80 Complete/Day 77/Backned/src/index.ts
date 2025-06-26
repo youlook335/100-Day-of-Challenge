@@ -1,8 +1,8 @@
-import express, { Application, Request, Response } from 'express';
+import express from 'express';
 import cors from 'cors';
 import jwt from 'jsonwebtoken';
 
-const app: Application = express();
+const app = express();
 const PORT = 3000;
 
 app.use(cors());
@@ -14,13 +14,13 @@ const user = {
   name: "Hassan"
 };
 
-const JWT_SECRET = "my_super_secret_key";
+const JWT_SECRET = 'my_super_secret_key';
 
-app.get('/', (req: Request, res: Response) => {
+app.get('/', (req, res) => {
   res.send("JWT Auth Backend is Ready");
 });
 
-app.post('/api/login', (req: Request, res: Response) => {
+app.post('/api/login', (req, res) => {
   const { email, password } = req.body;
 
   if (email === user.email && password === user.password) {
@@ -31,11 +31,11 @@ app.post('/api/login', (req: Request, res: Response) => {
   return res.status(401).json({ message: "Invalid Credentials" });
 });
 
-app.get('/api/secret', (req: Request, res: Response) => {
+app.get('/api/secret', (req, res) => {
   const authHeader = req.headers.authorization;
 
   if (!authHeader || !authHeader.startsWith("Bearer ")) {
-    return res.status(401).json({ message: "Token Missing or Invalid Format" });
+    return res.status(401).json({ message: "Invalid Credentials" });
   }
 
   const token = authHeader.split(" ")[1];
@@ -44,7 +44,7 @@ app.get('/api/secret', (req: Request, res: Response) => {
     const verified = jwt.verify(token, JWT_SECRET);
     return res.json({ message: "Protected data", user: verified });
   } catch (error) {
-    return res.status(401).json({ message: "Invalid or expired token" });
+    return res.status(401).json({ message: "Token Missing or Invalid Format" });
   }
 });
 

@@ -1,9 +1,11 @@
 import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
     const [formData, setFormData] = useState({ email: '', password: '' });
     const [message, setMessage] = useState('');
+    const Navigate = useNavigate();
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -17,6 +19,9 @@ const Login = () => {
             const token = res.data.token;
             localStorage.setItem('token', token);
             setMessage('Login Successful');
+
+
+            Navigate('/dashboard');
         } catch (error) {
             console.error(error);
             setMessage('Login Failed!');
