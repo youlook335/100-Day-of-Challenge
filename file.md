@@ -85,10 +85,10 @@
 **Day 63 (Jun 11):** Tree Traversals (Inorder, Pre, Post, levelorder)  ✅
 **Day 64 (Jun 12):** Graphs - Adjacency List, Matrix  ✅
 **Day 65 (Jun 13):** Graph Traversal - BFS, DFS  ✅
-**Day 66 (Jun 14):** Priority Queue + Heap (Min/Max)  
+**Day 66 (Jun 14):** Priority Queue + Heap (Min/Max) ✅ 
 **Day 67 (Jun 15):** DSA Contest / Practice Set  
 **Day 68 (Jun 16):** Problem-Solving - Medium Level  
-**Day 69 (Jun 17):** Review Advanced DSA Concepts  
+**Day 69 (Jun 17):** Review Advanced DSA Concepts  ✅
 **Day 70 (Jun 18):** Mock Interview (Advanced DSA)
 
 ---
