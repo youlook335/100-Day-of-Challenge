@@ -1,17 +1,36 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
+import axios from "axios";
+import login_bg from "../assets/login.jpg"
 
 function Login() {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
+
+  const handleLogin = async () => {
+    try {
+      const res = await axios.post("http://localhost:5000/api/auth/login", {
+        email,
+        password,
+      });
+      
+      const token = res.data.token;
+      localStorage.setItem("token", token);
+      navigate("/dashboard");
+      alert("Login successful!");
+    } catch (error: any) {
+      alert(error.response?.data?.message || "Login failed");
+    }
+  };
+
   return (
     <div
       className="min-h-screen bg-cover bg-center flex items-center justify-center"
       style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80')`,
-
+        backgroundImage: `url(${login_bg})`,
       }}
     >
       <div className="bg-white/20 backdrop-blur-xl p-8 rounded-xl shadow-2xl w-96 border border-white/30">
@@ -26,7 +45,7 @@ function Login() {
         />
         <div className="relative mb-6">
           <input
-            type={showPassword ? 'text' : 'password'}
+            type={showPassword ? "text" : "password"}
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -40,7 +59,10 @@ function Login() {
           </span>
         </div>
 
-        <button className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+        <button
+          onClick={handleLogin}
+          className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300"
+        >
           Login
         </button>
 

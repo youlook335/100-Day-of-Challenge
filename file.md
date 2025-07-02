@@ -55,10 +55,10 @@
 ---
 
 **Day 41 (May 20):** React Router DOM Basics  ✅
-**Day 42 (May 21):** Dynamic Routes, Params, Redirects  
+**Day 42 (May 21):** Dynamic Routes, Params, Redirects  ✅
 **Day 43 (May 22):** API Handling with Axios  ✅
 **Day 44 (May 23):** Fetch Data + Display UI  ✅
-**Day 45 (May 24):** Context API Deep Dive  
+**Day 45 (May 24):** Context API Deep Dive  ✅
 **Day 46 (May 25):** Build Blog App using API  ✅
 **Day 47 (May 26):** Polish Blog App UI  ✅
 **Day 48 (May 27):** Add Features: Search, Filter  ✅
