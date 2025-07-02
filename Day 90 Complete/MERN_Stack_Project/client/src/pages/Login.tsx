@@ -16,11 +16,15 @@ function Login() {
         email,
         password,
       });
-      
+      if (!email || !password) {
+        alert("Please enter both email and password.");
+        return;
+      }
+
       const token = res.data.token;
       localStorage.setItem("token", token);
-      navigate("/dashboard");
-      alert("Login successful!");
+      navigate("/");
+      alert("Welcome back! Login successful.");
     } catch (error: any) {
       alert(error.response?.data?.message || "Login failed");
     }

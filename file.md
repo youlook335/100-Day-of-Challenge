@@ -108,8 +108,8 @@
 
 **Day 81 (Jun 29):** Start MERN Full-Stack Project  ✅
 **Day 82 (Jun 30):** Set up React + Express + MongoDB  ✅
-**Day 83 (Jul 1):** Auth Pages + Forms (Login/Signup)  ✅
-**Day 84 (Jul 2):** Protected Routes + Roles  
+**Day 83 (Jul 1):** Auth Pages + Forms (Login/Signup) ✅
+**Day 84 (Jul 2):** Protected Routes + Roles  ✅
 **Day 85 (Jul 3):** Product/User Dashboard  
 **Day 86 (Jul 4):** Add Functionality + Testing  
 **Day 87 (Jul 5):** UI Polishing + Animations  

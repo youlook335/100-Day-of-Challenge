@@ -27,13 +27,16 @@ function Signup() {
         email,
         password,
       });
-
+      if (!email || !password) {
+        alert("Please enter all input like name, email and password.");
+        return;
+      }
       const token = res.data.token;
       localStorage.setItem("token", token);
       alert("Congratulations! Signup Successful.");
-      navigate("/dashboard");
+      navigate("/");
     } catch (error: any) {
-      alert(error.response?.data?.message || "Signup failed");
+      alert(error.response?.data?.message || "Signup failed PLease Move a /dashboard");
     }
   };
 
