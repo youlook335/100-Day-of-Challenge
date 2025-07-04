@@ -1,6 +1,7 @@
 import express, { Request, Response } from 'express';
 import user from '../models/User';
 import Log_User from '../models/Log_User';
+import Feedback_user from '../models/Feedback_user';
 
 
 const router = express.Router();
@@ -48,5 +49,25 @@ router.post('/login', async (req: Request, res: Response) => {
     return res.status(401).json({ message: 'Login failed' });
   }
 });
+
+// 🟢 Feedback
+router.post('/feedback', async (req: Request, res: Response) => {
+  try {
+    const { name, email, feedback, rating } = req.body;
+
+    if (!name || !feedback) {
+      return res.status(400).json({ message: 'Name and feedback are required' });
+    }
+
+    const newFeedback = new Feedback_user({ name, email, feedback, rating });
+    await newFeedback.save();
+
+    return res.status(201).json({ message: 'Feedback submitted successfully' });
+  } catch (error) {
+    console.error('Feedback Error:', error);
+    return res.status(500).json({ message: 'Error submitting feedback' });
+  }
+});
+
 
 export default router;

@@ -27,7 +27,7 @@ const Home = () => {
       {/* 2️⃣ What is LMS */}
       <section className="bg-gray-900 py-24 px-6 md:px-24 text-center">
         <h2 className="text-4xl font-bold mb-6 flex justify-center items-center gap-3">
-          <MdSchool size={30} /> What is   LMS?
+          <MdSchool size={30} /> What is LMS?
         </h2>
         <p className="text-gray-300 max-w-4xl mx-auto text-lg">
           A free, structured and distraction-free learning platform for aspiring developers.
@@ -37,7 +37,7 @@ const Home = () => {
 
       {/* 3️⃣ Why Choose Us */}
       <section className="bg-gray-950 py-24 px-6 md:px-24">
-        <h2 className="text-4xl font-bold text-center mb-14">Why Choose   LMS?</h2>
+        <h2 className="text-4xl font-bold text-center mb-14">Why Choose LMS?</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {[
             [<FaCheckCircle />, "Structured Roadmaps", "Topic-wise journeys from beginner to advanced."],
@@ -86,7 +86,7 @@ const Home = () => {
       {/* 5️⃣ Popular Courses */}
       <section className="bg-gray-950 py-28 px-6 md:px-24">
         <h2 className="text-4xl font-bold text-center mb-16 text-white">
-          🔥 Popular Courses
+          Popular Courses
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {[
@@ -182,7 +182,7 @@ Enroll("MERN Stack Development");`}
 
       {/* 6️⃣ How It Works */}
       <section className="bg-gray-900 py-24 px-6 md:px-24 text-center">
-        <h2 className="text-4xl font-bold mb-14">📘 How It Works</h2>
+        <h2 className="text-4xl font-bold mb-14">How It Works</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {[
@@ -227,13 +227,13 @@ Enroll("MERN Stack Development");`}
           to="/dashboard"
           className="mt-14 inline-block bg-green-600 hover:bg-green-700 px-10 py-4 rounded-md text-lg font-semibold text-white"
         >
-          🚀 Go to Dashboard
+          Go to Dashboard
         </Link>
       </section>
 
       {/* 7️⃣ Testimonials */}
       <section className="bg-gray-950 py-24 px-6 md:px-24 text-center">
-        <h2 className="text-4xl font-bold mb-10">💬 Student Feedback</h2>
+        <h2 className="text-4xl font-bold mb-10">Student Feedback</h2>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
           {[

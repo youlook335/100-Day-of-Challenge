@@ -12,6 +12,7 @@ import Form from "./components/Form";
 import Card from "./components/Card";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Feedback from "./pages/Feedback";
 
 function AppContent() {
   const location = useLocation();
@@ -26,6 +27,14 @@ function AppContent() {
         <Route path="/signup" element={<Signup />} />
         <Route
           path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <Feedback />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/main-dashboard"
           element={
             <ProtectedRoute>
               <Dashboard />
