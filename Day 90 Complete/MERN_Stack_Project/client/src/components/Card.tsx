@@ -1,5 +1,14 @@
 import React from "react";
 
+export interface featuredCourses {
+  id: number;
+  title: string;
+  desc: string;
+  creator: string;
+  platform: string;
+  url: string;
+}
+
 const featuredCourses = [
   {
     title: "DSA In Pyhton",
@@ -261,6 +270,41 @@ const featuredCourses = [
     creator: "Anas Ali",
     url: "https://www.youtube.com/watch?v=lewBT78I_pA&pp=ygUPc2hvcGlmeSBieSBhbmFz",
     desc: "Launch your Shopify store and learn eCommerce marketing.",
+  },
+  {
+    title: "Flutter App Development",
+    creator: "The Net Ninja",
+    desc: "Build mobile apps using Flutter framework",
+    platform: "YouTube",
+    url: "https://www.youtube.com/watch?v=VPvVD8t02U8",
+  },
+  {
+    title: "Data Structures in Java",
+    creator: "CodeWithHarry",
+    desc: "Understand core DSA concepts with Java",
+    platform: "YouTube",
+    url: "https://www.youtube.com/watch?v=lxB4O6gY4mA",
+  },
+  {
+    title: "DevOps Beginner Guide",
+    creator: "Simplilearn",
+    desc: "Learn CI/CD, Jenkins, Docker, and more",
+    platform: "YouTube",
+    url: "https://www.youtube.com/watch?v=sZmz9z8qLA4",
+  },
+  {
+    title: "Figma Design Tutorial",
+    creator: "DesignCourse",
+    desc: "UI/UX design for web and mobile using Figma",
+    platform: "YouTube",
+    url: "https://www.youtube.com/watch?v=wXnlHIvKnKM",
+  },
+  {
+    title: "Linux for Beginners",
+    creator: "freeCodeCamp",
+    desc: "Learn Linux terminal commands & usage",
+    platform: "YouTube",
+    url: "https://www.youtube.com/watch?v=ZtqBQ68cfJc",
   },
 ];
 
