@@ -8,7 +8,6 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Help from "./pages/Help";
 import NotFound from "./pages/NotFound";
-import Form from "./components/Form";
 import Card from "./components/Card";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -42,15 +41,7 @@ function AppContent() {
           }
         />
         <Route
-          path="/form"
-          element={
-            <ProtectedRoute>
-              <Form />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/cards"
+          path="/more-course"
           element={
             <ProtectedRoute>
               <Card />
