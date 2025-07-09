@@ -114,12 +114,12 @@
 **Day 86 (Jul 4):** Add Functionality + Testing  
 **Day 87 (Jul 5):** UI Polishing + Animations  ✅
 **Day 88 (Jul 6):** Project Deployment  ✅
-**Day 89 (Jul 7):** Bug Fixes + Final Touches  
-**Day 90 (Jul 8):** Final Presentation / Demo
+**Day 89 (Jul 7):** Bug Fixes + Final Touches  ✅
+**Day 90 (Jul 8):** Final Presentation / Demo ✅
 
 ---
 
-**Day 91 (Jul 9):** DSA Revision - Arrays & Strings  
+**Day 91 (Jul 9):** DSA Revision - Arrays & Strings  ✅
 **Day 92 (Jul 10):** DSA Revision - Trees & Graphs  
 **Day 93 (Jul 11):** Solve 3 Medium LeetCode Questions  
 **Day 94 (Jul 12):** Resume Building  
