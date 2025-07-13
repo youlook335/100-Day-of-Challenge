@@ -120,12 +120,12 @@
 ---
 
 **Day 91 (Jul 9):** DSA Revision - Arrays & Strings  ✅
-**Day 92 (Jul 10):** DSA Revision - Trees & Graphs  
+**Day 92 (Jul 10):** DSA Revision - Trees & Graphs  ✅
 **Day 93 (Jul 11):** Solve 3 Medium LeetCode Questions  
-**Day 94 (Jul 12):** Resume Building  
-**Day 95 (Jul 13):** Portfolio Website with Projects  
+**Day 94 (Jul 12):** Resume Building  ✅
+**Day 95 (Jul 13):** Portfolio Website with Projects  ✅
 **Day 96 (Jul 14):** GitHub Cleanup & Descriptions  
-**Day 97 (Jul 15):** Add Blogs / Documentation  
+**Day 97 (Jul 15):** Add Blogs / Documentation ✅ 
 **Day 98 (Jul 16):** Mock Interviews & Behavioral Qs  
 **Day 99 (Jul 17):** Final Day Project Demo & Review  
 **Day 100 (Jul 18):** Celebration + Plan Next Step!
